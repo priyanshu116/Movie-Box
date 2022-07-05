@@ -34,9 +34,15 @@
     object-fit: contain;
     cursor: pointer;
 }
+.navbar_icon>button{
+    background-color:blue;
+    color: whitesmoke;
+    cursor: pointer;
+}
+
 .navbar_button{
     background-color: gray;
-    color: white;
+    color:white;
     padding: 8px 8px;
     font-weight: 500;
     border: none;
@@ -45,6 +51,7 @@
     
     
 }
+
 .navbar_button:hover{
     transform:scale(1.2);
 }

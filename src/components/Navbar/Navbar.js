@@ -1,7 +1,8 @@
 import React, {useState, useEffect} from 'react'
 import "./Navbar.css";
 import {Link} from "react-router-dom";
-import PersonIcon from "@mui/icons-material/Person";
+
+
 
 function Navbar({showSignInButton, logout, show}) {
   const[dark, setDark] = useState(false);
@@ -36,7 +37,7 @@ function Navbar({showSignInButton, logout, show}) {
         </Link>
        )}
        
-      { logout && <p className="navbar_icon"><PersonIcon/></p>}
+      { logout && <p className="navbar_icon"> <button>Logout</button></p>}
        
       
     </div>

@@ -1,7 +1,19 @@
-import React from 'react'
+import React from 'react';
 import "./Banner.css";
+import axios from "axios";
+import  { useEffect } from "react";
+import requests from "../../requests/Request";
 
 function Banner() {
+
+  useEffect(() => {
+    fetchData();
+  }, []);
+  async function fetchData(){
+    
+    const request = await axios.get(requests.fetchNetflixOriginals);
+    console.log(request);
+  }
   return (
     <div className="banner" 
     style={{
