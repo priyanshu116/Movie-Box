@@ -9,8 +9,8 @@ function Homepage() {
       <Navbar showSignInButton={false} logout={true}/>
       <Banner/>
       <h1>hemllo</h1>
-      <h1>hello</h1>
-      <h1>hello</h1>
+      <h1>hemllo</h1>
+      <h1>hemllo</h1>
       <h1>hello</h1>
       <h1>hello</h1>
       <h1>hello</h1>
