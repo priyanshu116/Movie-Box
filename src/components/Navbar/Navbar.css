@@ -1,0 +1,66 @@
+.navbar_container{
+    position:sticky;
+    top:0;
+    
+    display: flex ;
+    align-items : center;
+    width:100%;
+    
+    
+  
+}
+.user_name{
+    color: white;
+    font-weight: 700;
+    position: absolute;
+    top: 14px;
+    right:50px;
+}
+.navbar_color{
+    
+    height: 50px;
+    background-color: #87CEEB;
+    padding: 0.2% 5%;
+    border-bottom: 1px lightblue ;
+}
+.navbar_dark{
+    background-color:#B0C4DE;
+    height:50px;
+}
+.navbar_logo{
+
+    width: 60px;
+    position: fixed;
+    left: 10px;
+    top: 1px;
+    height: 50px;
+    object-fit: contain;
+    cursor: pointer;
+}
+.navbar_button{
+    background-color: gray;
+    color: white;
+    padding: 8px 8px;
+    font-weight: 500;
+    border: none;
+    border-radius: 9px;
+    cursor: pointer;
+    position: fixed;
+    margin-top: 40px;
+    right: 30px;
+  
+    
+    
+    
+}
+.navbar_button:hover{
+    transform:scale(1.2);
+}
+.navbar_icon{
+ 
+    position: fixed;
+    top: 10px;
+    right: 20px;
+    color: black;
+    cursor: pointer;
+}
