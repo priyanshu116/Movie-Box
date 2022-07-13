@@ -1,6 +1,6 @@
 .landingpagecontent_container{
     background-color:lightyellow;
-    height:90vh;
+    height:100vh;
     display:flex;
     flex-direction:column;
     align-items:center;
@@ -9,12 +9,15 @@
 .landingpagecontent_title{
 font-size:40px;
 font-weight:700;
+
+
 }
 
 .landingpagecontent_subtitle{
     font-size:25px;
     font-weight:620;
     margin:10px 0;
+ 
 
 
 }
@@ -22,6 +25,7 @@ font-weight:700;
 .landingpagecontent_description{
     font-size:20px;
     margin-bottom:10px;
+    
 }
 .landingpagecontent_input{
     display:flex;

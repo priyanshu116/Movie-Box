@@ -16,7 +16,15 @@ function LandingPageContent() {
 
 
   return (
-    <div className="landingpagecontent_container">
+    <div className="landingpagecontent_container"
+    
+    style={{
+      backgroundImage:
+        'url("http://wallpapercave.com/wp/iUmIrGM.jpg")',
+      backgroundPosition: "center center",
+      backgroundSize: "cover",
+    }}
+    >
         <p className="landingpagecontent_title"> Web series, Tv shows, Films and more</p>
         <p className="landingpagecontent_subtitle">watch from your comfort</p>
         <p className="landingpagecontent_description"> Ready to explore? Enter your email for membership</p>
