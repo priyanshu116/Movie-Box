@@ -1,0 +1,8 @@
+.vlog{
+    display: flex;
+  background-color: #2F4F4F;
+    
+    overflow-y: hidden;
+    cursor:pointer;
+    
+}

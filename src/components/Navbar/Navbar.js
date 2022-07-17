@@ -1,14 +1,16 @@
 import React, { useEffect, useState } from "react";
 //import { useNavigate } from "react-router-dom";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./Navbar.css";
 import PersonIcon from "@mui/icons-material/Person";
 import { useAuth0 } from "@auth0/auth0-react";
+import SearchIcon from '@mui/icons-material/Search';
 
 
 
-function Navbar({ showSignInButton, logOut, show }) {
-  const { user, loginWithRedirect } = useAuth0();
+function Navbar({Searchbox, showSignInButton, logOut, show }) {
+
+ const { user, loginWithPopup } = useAuth0();
 
   const { logout } = useAuth0();
   //const navigate = useNavigate();
@@ -35,7 +37,7 @@ function Navbar({ showSignInButton, logOut, show }) {
 
   const goToSignInPage = () => {
     // navigate("/sign-in");
-    loginWithRedirect();
+    loginWithPopup();
   };
   return (
     <div
@@ -58,7 +60,14 @@ function Navbar({ showSignInButton, logOut, show }) {
           Sign In
         </button>
       )}
+      
 
+
+    
+        
+      
+
+      
       {logOut && (
         <>
           <h4 className="user_name"> {user && `Hi ${user.name}`} </h4>
@@ -72,6 +81,11 @@ function Navbar({ showSignInButton, logOut, show }) {
           >
             <PersonIcon />
           </p>
+          <input className="searchbox" type="text" placeholder="Seacrch"/>
+          <p className="searchbox_icon">
+            <SearchIcon/>
+          </p>
+
         </>
       )}
     </div>

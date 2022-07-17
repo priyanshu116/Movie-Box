@@ -11,13 +11,12 @@ function Banner() {
   useEffect(() => {
     fetchData();
   }, []);
+
   async function fetchData(){
     
     const request = await axios.get(
       "https://api.themoviedb.org/3/trending/all/week?api_key=3653c65d49aec32d55c3b5dd49c7b021&language=en-US"
     );
-
-    
     setMovie(
       request.data.results[
         Math.floor(Math.random() * request.data.results.length - 1)
@@ -25,6 +24,7 @@ function Banner() {
     );
     console.log(movie?.backdrop_path);
   }
+  
   const truncate = (string, n) => {
     return string?.length > n ? string.substr(0, n - 1) + "..." : string;
   };
@@ -39,7 +39,7 @@ function Banner() {
         backgroundSize:"Cover",
     }}>
         <div className="banner_contents">
-            <h1>Movie name</h1>
+            <h1>Movie name:</h1>
             <h1>
           {" "}
           {movie?.original_name || movie?.original_title || movie?.title}{" "}

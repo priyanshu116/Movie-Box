@@ -1,7 +1,9 @@
 import React from 'react'
 import "./LandingPageContent.css";
-//import {Link} from "react-router-dom";
+import {Link} from "react-router-dom";
 import {useAuth0} from "@auth0/auth0-react";
+import Navbar from '../Navbar/Navbar';
+
 
 
 function LandingPageContent() {
@@ -16,7 +18,9 @@ function LandingPageContent() {
 
 
   return (
-    <div className="landingpagecontent_container"
+    <div className="lbody">
+      <Navbar goToSignInPage={true}/>
+      <div className="landingpagecontent_container"
     
     style={{
       backgroundImage:
@@ -40,6 +44,10 @@ function LandingPageContent() {
             </div>
 
     </div>
+
+    </div>
+    
+            
   );
 }
 

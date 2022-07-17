@@ -3,33 +3,48 @@ import "./HomePage.css";
 import Navbar from "../../components/Navbar/Navbar";
 import Banner from "../../components/Banner/Banner";
 import Row from "../../components/Row/Row";
+import ReactPlayer from "react-player/youtube";
 
 function HomePage() {
   return (
     <div>
-      <Navbar showSignInButton={false} logOut={true} />
+      <Navbar showSignInButton={false} logOut={true} show={true}/>
       <Banner />
+      
       <Row
         title="MOVIE BOX HITS"
         fetchUrl="https://api.themoviedb.org/3/trending/all/week?api_key=3653c65d49aec32d55c3b5dd49c7b021&language=en-US"
         isLargeRow
       />
+      
+      
+      <div className="vlog">
+      <ReactPlayer url="https://youtu.be/PreZI0goJvQ" controls={true} width='20%' height='100%' />
+      <ReactPlayer url="https://youtu.be/7lOMNMpFqZY" controls={true} width='20%' height='100%' />
+      <ReactPlayer url="https://youtu.be/vdz-uysd23E" controls={true} width='20%' height='100%' />
+      <ReactPlayer url="https://youtu.be/qfN9R0_qmGM" controls={true} width='20%' height='100%' />
+      <ReactPlayer url="https://youtu.be/lcvHTNaJiY0" controls={true} width='20%' height='100%' />
+      <ReactPlayer url="https://youtu.be/Zk8E4lmiKo8" controls={true} width='20%' height='100%' />
+      <ReactPlayer url="https://youtu.be/Jws3JJ0XfdU" controls={true} width='20%' height='100%' />
+      </div>
+      
+      
       <Row
-        title="MOVIE BOX HITS"
+        title="TRENDING"
         fetchUrl="https://api.themoviedb.org/3/trending/all/week?api_key=3653c65d49aec32d55c3b5dd49c7b021&language=en-US"
-      />
+        isLargeRow
+        />
       <Row
-        title="MOVIE BOX HITS"
+        title="90's"
         fetchUrl="https://api.themoviedb.org/3/trending/all/week?api_key=3653c65d49aec32d55c3b5dd49c7b021&language=en-US"
-      />
+        isLargeRow
+        />
       <Row
-        title="MOVIE BOX HITS"
+        title="DARK"
         fetchUrl="https://api.themoviedb.org/3/trending/all/week?api_key=3653c65d49aec32d55c3b5dd49c7b021&language=en-US"
-      />
-      <Row
-        title="MOVIE BOX HITS"
-        fetchUrl="https://api.themoviedb.org/3/trending/all/week?api_key=3653c65d49aec32d55c3b5dd49c7b021&language=en-US"
-      />
+        isLargeRow
+        />
+      
     </div>
   );
 }
