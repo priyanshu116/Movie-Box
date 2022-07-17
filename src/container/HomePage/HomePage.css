@@ -1,8 +1,36 @@
 .vlog{
     display: flex;
   background-color: #2F4F4F;
-    
+    padding: 15px 15px;
+    object-fit: contain;
     overflow-y: hidden;
     cursor:pointer;
+    transition: transform 1s;
     
+}
+
+
+.vlog2{
+  display: flex;
+  background-color: #2F4F4F;
+  padding: 15px 15px;
+  overflow-x: scroll;
+    overflow-y: hidden;
+    cursor:pointer;
+    object-fit: contain;
+    transition: transform 0.5s;
+    
+}
+
+.v1:hover{
+  transform: scale(1.3);
+
+}
+.vlogname > h1{
+ background-color: #2F4F4F;
+
+  font-weight: bolder;
+  opacity: 0.4;
+  font-size: 1.5rem;
+  padding-left: 10px;
 }

@@ -81,7 +81,7 @@ function Navbar({Searchbox, showSignInButton, logOut, show }) {
           >
             <PersonIcon />
           </p>
-          <input className="searchbox" type="text" placeholder="Seacrch"/>
+          <input className="searchbox" type="text" placeholder="Search"/>
           <p className="searchbox_icon">
             <SearchIcon/>
           </p>

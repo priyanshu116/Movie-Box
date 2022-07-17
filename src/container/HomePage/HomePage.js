@@ -17,15 +17,22 @@ function HomePage() {
         isLargeRow
       />
       
-      
+      <p className="vlogname"><h1>VLOGS</h1></p>
       <div className="vlog">
-      <ReactPlayer url="https://youtu.be/PreZI0goJvQ" controls={true} width='20%' height='100%' />
-      <ReactPlayer url="https://youtu.be/7lOMNMpFqZY" controls={true} width='20%' height='100%' />
-      <ReactPlayer url="https://youtu.be/vdz-uysd23E" controls={true} width='20%' height='100%' />
-      <ReactPlayer url="https://youtu.be/qfN9R0_qmGM" controls={true} width='20%' height='100%' />
-      <ReactPlayer url="https://youtu.be/lcvHTNaJiY0" controls={true} width='20%' height='100%' />
-      <ReactPlayer url="https://youtu.be/Zk8E4lmiKo8" controls={true} width='20%' height='100%' />
-      <ReactPlayer url="https://youtu.be/Jws3JJ0XfdU" controls={true} width='20%' height='100%' />
+      <ReactPlayer className="v1" url="https://youtu.be/PreZI0goJvQ" controls={true} width='30%' height='100%' />
+      <ReactPlayer  className="v1" url="https://youtu.be/7lOMNMpFqZY" controls={true} width='30%' height='100%' />
+      <ReactPlayer  className="v1" url="https://youtu.be/vdz-uysd23E" controls={true} width='30%' height='100%' />
+      <ReactPlayer className="v1"  url="https://youtu.be/qfN9R0_qmGM" controls={true} width='30%' height='100%' />
+      
+      </div>
+     
+
+      <div className="vlog2">
+      <ReactPlayer  className="v1" url="https://youtu.be/lcvHTNaJiY0" controls={true} width='30%' height='100%' />
+      <ReactPlayer  className="v1" url="https://youtu.be/Zk8E4lmiKo8" controls={true} width='30%' height='100%' />
+      <ReactPlayer  className="v1" url="https://youtu.be/Jws3JJ0XfdU" controls={true} width='30%' height='100%' />
+      <ReactPlayer className="v1" url="https://youtu.be/38mCXnGMx8w" controls={true} width='30%' height='100%' />
+     
       </div>
       
       
