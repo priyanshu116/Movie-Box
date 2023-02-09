@@ -17,7 +17,7 @@ function HomePage() {
         isLargeRow
       />
       
-      <p className="vlogname"><h1>VLOGS</h1></p>
+      {/* <p className="vlogname"><h1>VLOGS</h1></p>
       <div className="vlog">
       <ReactPlayer className="v1" url="https://youtu.be/PreZI0goJvQ" controls={true} width='30%' height='100%' />
       <ReactPlayer  className="v1" url="https://youtu.be/7lOMNMpFqZY" controls={true} width='30%' height='100%' />
@@ -33,7 +33,7 @@ function HomePage() {
       <ReactPlayer  className="v1" url="https://youtu.be/Jws3JJ0XfdU" controls={true} width='30%' height='100%' />
       <ReactPlayer className="v1" url="https://youtu.be/38mCXnGMx8w" controls={true} width='30%' height='100%' />
      
-      </div>
+      </div> */}
       
       
       <Row
@@ -48,6 +48,11 @@ function HomePage() {
         />
       <Row
         title="DARK"
+        fetchUrl="https://api.themoviedb.org/3/trending/all/week?api_key=3653c65d49aec32d55c3b5dd49c7b021&language=en-US"
+        isLargeRow
+        />
+        <Row
+        title="FOR YOU"
         fetchUrl="https://api.themoviedb.org/3/trending/all/week?api_key=3653c65d49aec32d55c3b5dd49c7b021&language=en-US"
         isLargeRow
         />
